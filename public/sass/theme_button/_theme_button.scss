@@ -1,0 +1,152 @@
+
+
+
+.sidebar {
+    width: 18%;
+    -moz-transition: width 0.5s ease-out;
+    -o-transition: width 0.5s ease-out;
+    -webkit-transition: width 0.5s ease-out;
+    transition: width 0.5s ease-out;
+    display: inline-block;
+    z-index: 10;
+    background:#17B0C3;
+    padding:30px 20px;
+    position: relative;
+}
+
+
+.nav-sidebar {
+    background: none;
+    margin-top: 5px;
+    display: block;
+    margin-top: 50px;
+    li{
+        display:block;
+        padding:20px 0px;
+        a{
+            color: rgba( 255,255,255,0.7);
+            font-size: 13px;
+        }
+        &.active, &:hover{
+            a{
+                color: rgba( 255,255,255,1);
+            }
+        }
+    }
+}
+.img_bg_one{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+.img_bg_two{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.sidebar {
+    ul li a span {
+        &.fa {
+            font-size: 20px;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "\f0c9";
+        font-family: Fontawesome;
+        font-weight: 900;
+        font-size: 20px;
+        color: #ffffff;
+        z-index: -1;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        padding: 2px 8px;
+        left: 12px;
+        opacity: 0;
+        top: 26px;
+    }
+}
+
+
+.menuText {
+    left: 50px;
+    opacity: 1;
+    -moz-transition: opacity 0.6s 0.2s ease-out;
+    -o-transition: opacity 0.6s 0.2s ease-out;
+    -webkit-transition: opacity 0.6s 0.2s ease-out;
+    transition: opacity 0.6s 0.2s ease-out;
+    position: absolute;
+}
+
+.collapseToggle {
+    padding-left: 4px;
+    display: block;
+    cursor: pointer;
+    padding-right: 5px; //So it's easier to click
+}
+.collapseToggle img{
+    width: 70%;
+    transition: all 0.2s ease-in-out;
+}
+#toggleIcon {
+    -moz-transition: transform 0.4s ease-out;
+    -o-transition: transform 0.4s ease-out;
+    -webkit-transition: transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+}
+
+.rotate {
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -moz-transition: transform 0.4s ease-out;
+    -o-transition: transform 0.4s ease-out;
+    -webkit-transition: transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+}
+
+.sidebar--Collapse {
+    width: 60px;
+    -moz-transition: width 0.6s ease-out;
+    -o-transition: width 0.6s ease-out;
+    -webkit-transition: width 0.6s ease-out;
+    transition: width 0.6s ease-out;
+    position: relative;
+    &::before{
+        opacity: 1;
+        -moz-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        -webkit-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
+    }
+    .menuText {
+        opacity: 0;
+        -moz-transition: opacity 0.3s ease-out;
+        -o-transition: opacity 0.3s ease-out;
+        -webkit-transition: opacity 0.3s ease-out;
+        transition: opacity 0.3s ease-out;
+        position: absolute;
+    }
+    .img_bg_one{
+        visibility: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+
+}
+
+
+
+.product_btn{
+    padding:10px 14px;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 5px;
+    &:hover{
+        color: none;
+    }
+}
